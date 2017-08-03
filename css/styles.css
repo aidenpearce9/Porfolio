@@ -322,7 +322,7 @@
 }
 
 #flip:hover {
-  font-size: 45px;
+  font-size: 41px;
   cursor: pointer;
   color: #F50000;
   background-color: #000;
@@ -350,4 +350,107 @@
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 20%;
   margin: 0 auto;
+}
+
+#pet-site {
+  background-image: url('../img/petstore.png');
+  height: 300px;
+  width: 75%;
+  margin-left: 25%;
+  margin-top: 12%;
+  border-radius: 75%;
+  background-position: center;
+  background-size: cover;
+}
+
+#restaurant {
+  background-image: url('../img/restaurant.png');
+  height: 300px;
+  width: 75%;
+  margin-top: 12%;
+  border-radius: 75%;
+  background-position: center;
+  background-size: cover;
+}
+
+.my-goals {
+  height: 700px;
+  background-image: url('../img/grass.jpeg');
+  background-position: center;
+  background-size: cover;
+}
+
+.my-goals-text {
+  font-size: 60px;
+  color: #fff;
+}
+
+.red, .blue {
+  height: 500px;
+}
+
+.red {
+  background-color: #B35539;
+}
+
+.blue {
+  background-color: #0F75BD;
+}
+
+.lane {
+  height: 100px;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+
+.finish {
+  border: 5px solid #fff;
+}
+
+.finish-text {
+  transform: rotate(90deg);
+  margin-top: 32px;
+  font-size: 150px;
+  color: #fff;
+}
+
+.goals p {
+  visibility: hidden;
+  overflow: hidden;
+  height: 50px;
+  font-size: 40px;
+  color: #fff;
+  margin-top: 13px;
+  width: 0px;
+  -webkit-transition: width 2s;
+  transition: width 2s;
+}
+
+.goal-1:hover>p {
+  visibility: visible;
+  width: 1124px;
+}
+
+.goal-2:hover>p {
+  visibility: visible;
+  width: 1124px;
+}
+
+.goal-3:hover>p {
+  visibility: visible;
+  width: 1124px;
+}
+
+.goal-4:hover>p {
+  visibility: visible;
+  width: 1124px;
+}
+
+.goal-5:hover>p {
+  visibility: visible;
+  width: 1124px;
+}
+
+.goal:hover {
+  cursor: help;
 }
