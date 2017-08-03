@@ -383,6 +383,14 @@
 .my-goals-text {
   font-size: 60px;
   color: #fff;
+  background-color: #000;
+  border-radius: 60%;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-shadow: 10px 15px 10px rgba(0, 0, 0, .9);
+  box-shadow: 10px 15px 10px rgba(0, 0, 0, .9);
 }
 
 .red, .blue {
@@ -424,6 +432,7 @@
   width: 0px;
   -webkit-transition: width 2s;
   transition: width 2s;
+  text-shadow: 5px 5px 5px #000;
 }
 
 .goal-1:hover>p {
@@ -453,4 +462,8 @@
 
 .goal:hover {
   cursor: help;
+}
+
+.contact-me {
+  
 }
