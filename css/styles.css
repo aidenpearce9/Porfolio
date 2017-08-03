@@ -1,0 +1,29 @@
+ @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Press+Start+2P|Shadows+Into+Light');
+
+.press-start {
+  font-family: 'Press Start 2P';
+}
+
+ .navbar-inverse {
+   border: none;
+ }
+
+ .navbar-inverse .navbar-nav>li>a {
+   color: #FFF;
+   text-shadow: 1px 1px 2px #333;
+ }
+
+ .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+   background-color: rgba(51 51 51 .25);
+   color: #F8512F;
+ }
+
+.nav-items a {
+  margin: 0px 10px;
+}
+
+.item {
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+}
