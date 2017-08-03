@@ -10,30 +10,32 @@
 </head>
 <body data-spy="scroll">
 	<div class="container-fluid background-pic">
-		<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-logo" href="#home"><img src="img/logo.png" alt="Restaurante" class="logo" height="50px"></a>
-		    </div>
-				<div class="navigation" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right nav-items press-start">
-						<li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
-		        <li><a href="#our-story">My Story</a></li>
-		        <li><a href="#food-review">My Work</a></li>
-						<li><a href="#menu">My Goals</a></li>
-		        <li><a href="#contact-us">Contact me</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
+		<div id="home">
+			<nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			      </button>
+			      <a class="navbar-logo" href="#home"><img src="img/logo.png" alt="Restaurante" class="logo" height="50px"></a>
+			    </div>
+					<div class="navigation" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav navbar-right nav-items press-start">
+							<li class="active"><a href="#home">Home<span class="sr-only">(current)</span></a></li>
+			        <li><a href="#our-story">My Story</a></li>
+			        <li><a href="#my-work">My Work</a></li>
+							<li><a href="#my-goals">My Goals</a></li>
+			        <li><a href="#contact-me">Contact me</a></li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+		</div>
 		<div class="container">
-			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+			<div id="carousel-example-generic" class="carousel carousel-section slide" data-ride="carousel">
 		  <!-- Indicators -->
 			  <ol class="carousel-indicators">
 			    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -89,6 +91,110 @@
 			  </a>
 			</div>
 			<!-- carousel ends -->
+			<div id="my-story">
+				<div class="row">
+					<div class="col-sm-6 comp-section">
+						<div class="computer">
+							<h2 class="press-start pull-left text-center">My <br>
+							Story</h2>
+							<div class="line pull-right"></div>
+						</div>
+					</div>
+					<div class="col-sm-6 my-story text-justify pt-sans">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam facilis itaque et nihil reiciendis voluptas veritatis quo, libero veniam. Vitae facere consequuntur repellendus est enim distinctio, libero, sequi culpa optio. Mollitia tenetur dolorem eaque unde illo aperiam animi voluptatum, non ducimus dolorum recusandae nemo neque libero expedita, at labore minima rerum, cupiditate aliquam ad assumenda perspiciatis. Tenetur explicabo autem aperiam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam facilis itaque et nihil reiciendis voluptas veritatis quo, libero veniam. Vitae facere consequuntur repellendus est enim distinctio, libero, sequi culpa optio. Mollitia tenetur dolorem eaque unde illo aperiam animi voluptatum, non ducimus dolorum recusandae nemo neque libero expedita, at labore minima rerum, cupiditate aliquam ad assumenda perspiciatis. Tenetur explicabo autem aperiam.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3 col-sm-offset-1 first-quote">
+				<div class="cols">
+					<div class="col" ontouchstart="this.classList.toggle('hover');">
+						<div class="container flip-card">
+							<div class="front pt-sans" style="background-image: url(img/glass.jpg)">
+								<div class="inner">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor ab deserunt vero.</p>
+									<i class="fa fa-quote-right" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="back rock-salt" style="background-image: url(img/glass.jpg)">
+								<div class="inner">
+									<p>- Diligord</p>
+									<p>yes studio</p>
+									<p>yesno@maybe.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="cols">
+					<div class="col" ontouchstart="this.classList.toggle('hover');">
+						<div class="container flip-card">
+							<div class="front pt-sans" style="background-image: url(img/glass-2.jpeg)">
+								<div class="inner">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor ab deserunt vero.</p>
+									<i class="fa fa-quote-right" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="back rock-salt" style="background-image: url(img/glass-2.jpeg)">
+								<div class="inner">
+									<p>- Diligord</p>
+									<p>yes studio</p>
+									<p>yesno@maybe.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="cols">
+					<div class="col" ontouchstart="this.classList.toggle('hover');">
+						<div class="container flip-card">
+							<div class="front pt-sans" style="background-image: url(img/glass-3.jpg)">
+								<div class="inner">
+									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolor ab deserunt vero.</p>
+									<i class="fa fa-quote-right" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="back rock-salt" style="background-image: url(img/glass-3.jpg)">
+								<div class="inner">
+									<p>- Diligord</p>
+									<p>yes studio</p>
+									<p>yesno@maybe.com</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row" id="my-work">
+				<div class="col-sm-12">
+					<div>
+						<div id="flip" class="press-start">What I'm Working On</div>
+						<div id="panel" class="pull-left"></div>
+						<div class="row my-work clear-left">
+							<div class="col-sm-6">
+								<div class="pet-site">
+									
+								</div>
+							</div>
+							<div class="col-sm-6">
+								<div class="restaurant">
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
