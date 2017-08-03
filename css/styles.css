@@ -13,6 +13,11 @@
   background-attachment: fixed;
 }
 
+.logo {
+  margin-left: 20px;
+  padding: 5px;
+}
+
 .shadow-into-light {
   font-family: 'Shadow Into Light';
 }
