@@ -303,7 +303,6 @@
   line-height: 50px;
   font-size: 15px;
   font-weight: 400;
-  /*font-family: 'Shadow Into Light';*/
 }
 
 @media screen and (max-width: 64rem){
@@ -328,18 +327,17 @@
 #flip {
   font-size: 40px;
   color: #fff;
-  background-color: #000;
+  /*background-color: #000;*/
 }
 
 #flip:hover {
-  font-size: 41px;
   cursor: pointer;
   color: #F50000;
-  background-color: #000;
+  text-decoration: none;
 }
 
 #panel, #flip {
-    padding: 5px;
+    padding: 0px;
     text-align: center;
     background-size: cover;
     background-position: center;
@@ -351,6 +349,30 @@
     width: 1140px;
     border-bottom-right-radius: 20%;
     border-bottom-left-radius: 20%;
+}
+
+.title-area {
+  width: 770px;
+  margin: 0 auto;
+}
+
+.click-text {
+  background-color: rgba(0, 91, 151, .8);
+  font-size: 30px;
+  color: #fff;
+  width: 520px;
+  padding: 10px 20px 15px 20px;
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 5px #fff;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  visibility: hidden;
+}
+
+.work-text {
+  background-color: #000;
+  border-radius: 60%;
 }
 
 .my-work {
@@ -371,6 +393,7 @@
   border-radius: 75%;
   background-position: center;
   background-size: cover;
+  padding-top: 100px;
 }
 
 #restaurant {
@@ -381,6 +404,33 @@
   border-radius: 75%;
   background-position: center;
   background-size: cover;
+  padding-top: 100px;
+}
+
+#restaurant:hover, #pet-site:hover {
+  background-size: auto;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 15px #fff;
+  text-decoration: none;
+}
+
+#hover-area h2 {
+  color: red;
+  font-size: 35px;
+  text-shadow: 0px 0px 10px #fff;
+  visibility: hidden;
+}
+
+#pet-site:hover {
+  background-image: url('../img/petstore-fade.png');
+}
+
+#restaurant:hover {
+  background-image: url('../img/restaurant-fade.png');
+}
+
+#restaurant:hover h2, #pet-site:hover h2 {
+  visibility: visible;
 }
 
 .my-goals {
@@ -493,6 +543,7 @@
   margin-top: 30px;
   margin-bottom: 30px;
   border: 3px solid #fff;
+  border-radius: 30px;
   box-shadow: 0px 0px 15px #fff;
 }
 
