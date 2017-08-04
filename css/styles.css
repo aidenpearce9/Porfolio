@@ -1,14 +1,18 @@
  @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Press+Start+2P|Shadows+Into+Light');
 @import url('https://fonts.googleapis.com/css?family=Rock+Salt');
 
+* {
+  transition-duration: 0.1s;
+}
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px;
 }
 
 .background-pic {
-  background-image: url('../img/controller.jpg');
-  background-position: center;
+  background-image: url('../img/pixel.gif');
+  background-position: top;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -58,6 +62,30 @@
   background-size: cover;
 }
 
+.carousel-caption.carousel-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 60%;
+}
+
+.carousel-quote {
+  margin: 0 20px;
+}
+
+.caption-box {
+  padding: 20px 30px;
+  background-color: rgba(0, 0, 0, .65);
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 10px #fff;
+  border-radius: 20px;
+}
+
+.caption-box>h2 {
+  font-size: 28px;
+}
+
 .carousel-flex {
   display: flex;
   flex-direction: column;
@@ -65,11 +93,19 @@
 }
 
 .carousel-section {
-  margin-bottom: 45px;
+  margin-bottom: 100px;
 }
 
 #my-story {
   height: 100%;
+}
+
+#my-story .row-1 {
+  margin-bottom: 50px;
+}
+
+.row-2 {
+  margin-bottom: 100px;
 }
 
 .computer {
@@ -136,7 +172,7 @@
 .my-story {
   background-color: rgba(3, 45, 70, .60);
   color: #fff;
-  font-size: 16px;
+  font-size: 18px;
   border-radius: 50px;
   border: 3px solid #fff;
   height: 350px;
@@ -165,9 +201,7 @@
 
 .flip-card {
   width: 300px;
-  height: 150px;
   margin: 0px;
-  padding: 1px;
 }
 
 .col{
@@ -196,7 +230,7 @@
 	        backface-visibility: hidden;
 	text-align: center;
 	min-height: 100px;
-	height: auto;
+	height: 150px;
 	border-radius: 10px;
 	color: #fff;
 	font-size: 1.5rem;
@@ -285,7 +319,7 @@
 }
 
 .front .inner p{
-  font-size: 17px;
+  font-size: 15px;
   margin-bottom: 40px;
   margin-left: 10px;
   margin-right: 10px;
@@ -299,10 +333,11 @@
 
 .back p {
   background-color: rgba(0, 0, 0, 1);
-  border-radius: 20%;
+  border-radius: 60%;
   line-height: 50px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
+  padding: 3px 7px;
 }
 
 @media screen and (max-width: 64rem){
@@ -324,13 +359,17 @@
   }
 }
 
+#my-work {
+  margin-top: 30px;
+}
+
 #flip {
   font-size: 40px;
   color: #fff;
-  /*background-color: #000;*/
+  text-decoration: none;
 }
 
-#flip:hover {
+#flip h1:hover {
   cursor: pointer;
   color: #F50000;
   text-decoration: none;
@@ -341,14 +380,15 @@
     text-align: center;
     background-size: cover;
     background-position: center;
+    text-decoration: none;
 }
 
 #panel {
     padding: 235px 50px;
     background-image: url('../img/keyboard.jpeg');
     width: 1140px;
-    border-bottom-right-radius: 20%;
-    border-bottom-left-radius: 20%;
+    border-radius: 50px;
+    margin-bottom: 200px;
 }
 
 .title-area {
@@ -366,21 +406,32 @@
   box-shadow: 0px 0px 5px #fff;
   border-radius: 20px;
   margin: 0 auto;
-  margin-bottom: 10px;
   visibility: hidden;
 }
 
-.work-text {
+.work-text>h1 {
   background-color: #000;
   border-radius: 60%;
+  padding: 10px 30px;
+  margin-bottom: 0;
+
+}
+
+.work-text p {
+  visibility: hidden;
+  font-size: 20px;
+  margin: 0;
+}
+
+.work-text:hover p {
+  visibility: visible;
 }
 
 .my-work {
   height: 470px;
   width: 1140px;
   background-color: rgba(0, 0, 0, .75);
-  border-bottom-right-radius: 20%;
-  border-bottom-left-radius: 20%;
+  border-radius: 50px;
   margin: 0 auto;
 }
 
@@ -411,6 +462,9 @@
   background-size: auto;
   border: 3px solid #fff;
   box-shadow: 0px 0px 15px #fff;
+}
+
+.pics a, .pics a:hover {
   text-decoration: none;
 }
 
@@ -471,6 +525,10 @@
   border-bottom: 5px solid #fff;
 }
 
+.lane:hover {
+  cursor: help;
+}
+
 .finish {
   border: 5px solid #fff;
 }
@@ -485,7 +543,7 @@
 .goals p {
   visibility: hidden;
   overflow: hidden;
-  height: 50px;
+  height: 60px;
   font-size: 40px;
   color: #fff;
   margin-top: 13px;
@@ -531,7 +589,7 @@
   border-radius: 60%;
   width: 700px;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 200px;
   text-shadow: 10px 15px 10px rgba(0, 0, 0, .9);
   box-shadow: 10px 15px 10px rgba(0, 0, 0, .9);
 
@@ -539,8 +597,8 @@
 
 .contact-me {
   height: 500px;
-  background-color: rgba(3, 155, 191, .8);
-  margin-top: 30px;
+  background-color: rgba(3, 155, 191, .5);
+  margin-top: 60px;
   margin-bottom: 30px;
   border: 3px solid #fff;
   border-radius: 30px;
@@ -602,4 +660,8 @@
 .map {
   margin-top: 10px;
   margin-left: 50px;
+}
+
+form label {
+  color: #fff;
 }
